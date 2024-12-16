@@ -3,11 +3,14 @@
  */
 package org.example;
 
+
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BookTest {
-    @Test void testBookConstructor() {
+    @Test
+    void testBookConstructor() {
         Book book = new Book("1984", "George Orwell", 1949);
         assertEquals("1984", book.getTitle());
         assertEquals("George Orwell", book.getAuthor());
